@@ -1,6 +1,7 @@
 import { links } from "@/lib/data";
 import Link from "next/link";
 import { ModeToggle } from "../ui/mode-toggle";
+import SearchBar from "./search";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <ModeToggle className="ml-auto" />
+
+        <div className="flex items-center gap-4">
+          <SearchBar />
+          <ModeToggle />
+        </div>
       </div>
     </nav>
   );
