@@ -101,3 +101,10 @@ export const worksheets: Worksheets = {
     },
   ],
 };
+
+export const instructorInfo = {
+  name: "Manju Muralidharan Priya",
+  Email: "mmuralidharanpriya@sdsu.edu",
+  "Virtual Office": "Meeting ID 243-757-7255 (on Zoom)",
+  Office: "GMCS 546 , T, TH 9:30 AM - 11:30 AM",
+};

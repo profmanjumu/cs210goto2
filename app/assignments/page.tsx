@@ -1,9 +1,11 @@
+import { getAssignments } from "@/actions/assignmentActions";
 import Worksheet from "@/components/assignment-page/worksheet";
 import { Separator } from "@/components/ui/separator";
-import { programmingAssignments, worksheets } from "@/lib/data";
+import { worksheets } from "@/lib/data";
 import Link from "next/link";
 
-export default function Assignments() {
+export default async function Assignments() {
+  const assignments = await getAssignments();
   return (
     <main className="h-full flex flex-col container mx-auto items-start justify-start pt-20 gap-8">
       <header className="self-center text-5xl font-semibold mb-12">
@@ -15,7 +17,7 @@ export default function Assignments() {
         </h1>
 
         <ul className="flex flex-col gap-4 items-start justify-start pt-6">
-          {programmingAssignments.map((assignment) => (
+          {assignments.map((assignment) => (
             <li
               className="hover:text-primary text-primary/30 transition-opacity duration-300"
               key={assignment.id}
