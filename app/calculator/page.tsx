@@ -43,7 +43,7 @@ export default function CalculatorPage() {
   return (
     <main className="h-screen flex items-center justify-center">
       <form onSubmit={handleSubmit}>
-        <Card className="flex flex-col gap-2 p-4">
+        <Card className="flex flex-col gap-2">
           <CardHeader>
             <CardTitle>Grade Calculator</CardTitle>
             <CardDescription>Calculate your grade</CardDescription>
