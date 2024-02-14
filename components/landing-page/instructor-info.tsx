@@ -13,7 +13,7 @@ const InstructorInfo = () => {
 
               return (
                 <li key={key} className="text-sm">
-                  <strong>{key.replace(/([A-Z])/g, " $1").trim()}:</strong>{" "}
+                  <strong>{key.replace(/([A-Z])/g, " $1").trim()}:</strong>
                   {value}
                 </li>
               );
